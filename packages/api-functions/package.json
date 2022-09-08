@@ -1,0 +1,15 @@
+{
+  "name": "api-functions",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "next-connect": "1.0.0-next.4"
+  }
+}

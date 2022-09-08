@@ -17,6 +17,12 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3
 
+  packages/api-functions:
+    dependencies:
+      next-connect:
+        specifier: 1.0.0-next.4
+        version: 1.0.0-next.4
+
   packages/app:
     dependencies:
       '@nextui-org/react':
@@ -3213,6 +3219,13 @@ packages:
       }
     dev: true
 
+  /@tsconfig/node16@1.0.4:
+    resolution:
+      {
+        integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==,
+      }
+    dev: false
+
   /@types/chrome@0.0.244:
     resolution:
       {
@@ -5994,6 +6007,17 @@ packages:
         integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==,
       }
 
+  /next-connect@1.0.0-next.4:
+    resolution:
+      {
+        integrity: sha512-Iwfz4BgKyiU1E7PeF+kY0d3Ntjr6ZZv6SlOpQokBjaa4YmWv4zEuf/v5txFcoXDF9fSSjdzSzOQ6C+dQEQxkwA==,
+      }
+    engines: { node: '>=16' }
+    dependencies:
+      '@tsconfig/node16': 1.0.4
+      regexparam: 2.0.1
+    dev: false
+
   /next@13.4.19(react-dom@18.2.0)(react@18.2.0):
     resolution:
       {
@@ -6638,6 +6662,14 @@ packages:
       call-bind: 1.0.2
       define-properties: 1.2.0
       functions-have-names: 1.2.3
+    dev: false
+
+  /regexparam@2.0.1:
+    resolution:
+      {
+        integrity: sha512-zRgSaYemnNYxUv+/5SeoHI0eJIgTL/A2pUtXUPLHQxUldagouJ9p+K6IbIZ/JiQuCEv2E2B1O11SjVQy3aMCkw==,
+      }
+    engines: { node: '>=8' }
     dev: false
 
   /resolve-from@4.0.0:

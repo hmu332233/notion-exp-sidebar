@@ -4,12 +4,15 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:api": "vercel dev"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "next-connect": "1.0.0-next.4"
+  },
+  "devDependencies": {
+    "vercel": "^32.2.0"
   }
 }

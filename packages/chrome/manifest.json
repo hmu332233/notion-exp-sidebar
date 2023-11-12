@@ -1,19 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "Global side panel",
+  "name": "EXP SYNC",
   "version": "1.0",
-  "description": "Shows how to display the same side panel on every site using the Side Panel API.",
+  "description": "구름EXP와 NOTION 프로젝트를 동기화하는 도구를 제공합니다.",
   "icons": {
-    "16": "images/icon-16.png"
+    "16": "images/logo.png"
   },
-  "side_panel": {
-    "default_path": "dist/index.html"
-  },
-  "permissions": ["sidePanel", "contextMenus"],
-
-  "externally_connectable": {
-    "matches": ["https://localhost:3000/*"]
-  },
+  "permissions": ["contextMenus", "activeTab", "scripting"],
   "background": {
     "service_worker": "service-worker.js"
   }

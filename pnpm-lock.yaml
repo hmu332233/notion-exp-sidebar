@@ -28,6 +28,9 @@ importers:
       cors:
         specifier: ^2.8.5
         version: 2.8.5
+      dayjs:
+        specifier: ^1.11.10
+        version: 1.11.10
       next-connect:
         specifier: ^1.0.0
         version: 1.0.0
@@ -4724,6 +4727,13 @@ packages:
     resolution:
       {
         integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==,
+      }
+    dev: false
+
+  /dayjs@1.11.10:
+    resolution:
+      {
+        integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==,
       }
     dev: false
 

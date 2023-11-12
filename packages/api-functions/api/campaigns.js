@@ -1,6 +1,7 @@
 import { createRouter } from 'next-connect';
 // import { Client } from '@notionhq/client';
 import axios from 'axios';
+import dayjs from 'dayjs';
 
 const CAMPAIGN_API_URL = process.env.CAMPAIGN_API_URL;
 const EXP_TOKEN = process.env.EXP_TOKEN;
@@ -19,8 +20,8 @@ router.post(async (req, res) => {
       name: title,
       manager: 'mark_han_i1gmru6jp',
       description: `<p><a target="_blank" rel="noopener noreferrer nofollow" href="${url}">관련 프로젝트</a></p>`,
-      startDate: 1699974000000,
-      endDate: 1700319599999,
+      startDate: dayjs().startOf('day').valueOf(),
+      endDate: dayjs().endOf('day').valueOf(),
       visibility: 'group',
       groupId: 'gp_edu_channel220509',
       participants: ['mark_han_i1gmru6jp'],

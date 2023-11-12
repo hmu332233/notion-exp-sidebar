@@ -36,7 +36,7 @@ function insertExpLink() {
       body: JSON.stringify(data),
     })
       .then((response) => response.json())
-      .then(({ campaignId }) => {
+      .then(({ url }) => {
         const selection = window.getSelection();
         const range =
           selection.rangeCount > 0
@@ -44,7 +44,7 @@ function insertExpLink() {
             : document.createRange();
 
         // 삽입할 텍스트를 생성합니다.
-        const textNode = document.createTextNode(campaignId);
+        const textNode = document.createTextNode(url);
         range.deleteContents();
         range.insertNode(textNode);
 
